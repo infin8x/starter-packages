@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fabrikam.bacon</groupId>
+  <artifactId>bacon-and-java</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0.1</version>
+  <description>Bacon and coffee, better together</description>
+  <name>bacon-and-java</name>
+  <url>https://microsoft.com</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <id>dev-azure.com-ignite</id>
+      <url>https://pkgs.dev.azure.com/codesharing-demo/_packaging/Ignite/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <repository>
+      <id>dev-azure.com-ignite</id>
+      <url>https://pkgs.dev.azure.com/codesharing-demo/_packaging/Ignite/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </distributionManagement>
+</project>
