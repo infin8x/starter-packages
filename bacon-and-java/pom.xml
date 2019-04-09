@@ -8,6 +8,10 @@
   <description>Bacon and coffee, better together</description>
   <name>bacon-and-java</name>
   <url>https://microsoft.com</url>
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -18,8 +22,8 @@
   </dependencies>
   <repositories>
     <repository>
-      <id>dev-azure.com-ignite</id>
-      <url>https://pkgs.dev.azure.com/codesharing-demo/_packaging/Ignite/maven/v1</url>
+      <id>dev-azure-com-codesharing-demo-codesharing-demo</id>
+      <url>https://pkgs.dev.azure.com/codesharing-demo/_packaging/codesharing-demo/maven/v1</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -30,8 +34,8 @@
   </repositories>
   <distributionManagement>
     <repository>
-      <id>dev-azure.com-ignite</id>
-      <url>https://pkgs.dev.azure.com/codesharing-demo/_packaging/Ignite/maven/v1</url>
+      <id>dev-azure-com-codesharing-demo-codesharing-demo</id>
+      <url>https://pkgs.dev.azure.com/codesharing-demo/_packaging/codesharing-demo/maven/v1</url>
       <releases>
         <enabled>true</enabled>
       </releases>
