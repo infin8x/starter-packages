@@ -4,7 +4,7 @@
   <groupId>com.fabrikam.bacon</groupId>
   <artifactId>bacon-and-java</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <description>Bacon and coffee, better together</description>
   <name>bacon-and-java</name>
   <url>https://microsoft.com</url>

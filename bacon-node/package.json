@@ -1,6 +1,6 @@
 {
   "name": "bacon-node",
-  "version": "1.0.11",
+  "version": "1.0.30",
   "description": "The most tasty package ever, now for npm.",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,8 @@
     "bacon"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
 }

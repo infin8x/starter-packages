@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.fabrikam.bacon.AppTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.fabrikam.bacon.AppTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
-    <property name="java.vm.version" value="25.181-b13"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="11.0.2+9-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\dev\repos\starter-packages\bacon-and-java"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\dev\repos\starter-packages\bacon-and-java"/>
-    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.2+9-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\amullans\AppData\Local\Temp\"/>
     <property name="line.separator" value="
@@ -29,41 +28,42 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\dev\tools\mvn\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\dev\tools\cmder\bin;C:\dev\tools\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\dev\tools\cmder\vendor\conemu-maximus5;C:\dev\tools\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Microsoft SDKs\VSTS\CLI\wbin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\libnvvp;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\dev\tools\nuget;C:\dev\tools\cmder;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Redis\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs\;C:\Go\bin;C:\dev\tools\kubernetes;C:\Program Files\PuTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\dev\tools\UPackClient;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\amullans\AppData\Local\Continuum\anaconda3\Scripts;C:\Users\amullans\AppData\Local\Continuum\anaconda3;C:\Users\amullans\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Yarn\bin;C:\Users\amullans\AppData\Local\Yarn\bin;C:\Users\amullans\AppData\Roaming\npm;C:\Users\amullans\AppData\Local\Programs\Microsoft VS Code\bin;C:\dev\tools\mvn\bin;C:\Users\amullans\AppData\Local\Microsoft\WindowsApps;C:\Users\amullans\AppData\Roaming\Dashlane\6.1841.0.13779\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\amullans\AppData\Roaming\Dashlane\6.1841.0.13779\ucrt;C:\Users\amullans\AppData\Roaming\Dashlane\6.1841.0.13779\bin\Qt;C:\Users\amullans\AppData\Roaming\Dashlane\6.1841.0.13779\ucrt;C:\Users\amullans\AppData\Roaming\Dashlane\6.1841.0.13779\bin\Ssl;C:\dev\tools\cmder;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\dev\repos\starter-packages\snaky-bacon\Scripts;C:\dev\tools\cmder\bin;C:\dev\tools\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\dev\tools\cmder\vendor\conemu-maximus5;C:\dev\tools\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\dev\tools\nuget;C:\dev\tools\cmder;C:\Program Files\Git\cmd;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\dev\tools\mvn\bin;C:\Program Files\dotnet\;C:\Users\amullans\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\amullans\AppData\Local\Programs\Python\Python37-32\;C:\Users\amullans\AppData\Local\Microsoft\WindowsApps;C:\dev\tools\cmder;C:\Users\amullans\AppData\Roaming\npm;C:\Users\amullans\AppData\Roaming\Dashlane\6.1905.1.17471\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\amullans\AppData\Roaming\Dashlane\6.1905.1.17471\ucrt;C:\Users\amullans\AppData\Roaming\Dashlane\6.1905.1.17471\bin\Qt;C:\Users\amullans\AppData\Roaming\Dashlane\6.1905.1.17471\bin\Ssl;C:\Users\amullans\.dotnet\tools;C:\Users\amullans\AppData\Roaming\Dashlane\6.1907.0.17833\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\amullans\AppData\Roaming\Dashlane\6.1907.0.17833\ucrt;C:\Users\amullans\AppData\Roaming\Dashlane\6.1907.0.17833\bin\Qt;C:\Users\amullans\AppData\Roaming\Dashlane\6.1907.0.17833\bin\Ssl;;C:\dev\tools\cmder;."/>
     <property name="maven.conf" value="C:\dev\tools\mvn\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="C:\dev\tools\mvn\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\amullans"/>
-    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
     <property name="user.name" value="amullans"/>
     <property name="java.class.path" value="C:\dev\tools\mvn\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher deploy"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.2"/>
     <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_181"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.version" value="11.0.2"/>
     <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="maven.home" value="C:\dev\tools\mvn\bin\.."/>
     <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.fabrikam.bacon.AppTest" name="testApp" time="0.002"/>
+  <testcase classname="com.fabrikam.bacon.AppTest" name="testApp" time="0.003"/>
 </testsuite>
