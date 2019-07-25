@@ -2,8 +2,8 @@
   "name": "@infin8x/bacon-node",
   "version": "1.0.0",
   "description": "The most tasty package ever, now for npm.",
-  "repository" : {
-    "type" : "git",
+  "repository": {
+    "type": "git",
     "url": "git://github.com/infin8x/starter-packages.git"
   },
   "main": "index.js",
