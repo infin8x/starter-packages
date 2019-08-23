@@ -15,7 +15,7 @@ jobs:
         dotnet-version: 2.2.401
     - name: Authentimagication
       run: |
-           sed -i -e 's/TOKEN/$GITHUB_TOKEN/g' nuget-bacon/nuget.template.config
+           sed -i -e 's/TOKEN/'$GITHUB_TOKEN'/g' nuget-bacon/nuget.template.config
            mv nuget-bacon/nuget.template.config nuget-bacon/nuget.config
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
