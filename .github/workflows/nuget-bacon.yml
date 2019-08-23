@@ -20,8 +20,8 @@ jobs:
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Create the package
-      run: dotnet pack --configuration Release
+      run: dotnet pack nuget-bacon/ --configuration Release
     - name: Publish the package
-      run: dotnet nuget push -s GPR nuget-bacon/bin/Release/*.nupkg
+      run: dotnet nuget push nuget-bacon/bin/Release/*.nupkg -s GPR
     - name: Authentimagication clean-up
       run: rm -f nuget.config
