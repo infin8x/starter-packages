@@ -23,8 +23,8 @@ jobs:
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Create the package
-      run: mvn package --settings bacon-and-java/settings.xml
+      run: mvn package bacon-and-java/ --settings bacon-and-java/settings.xml
     - name: Publish the package
-      run: mvn publish --settings bacon-and-java/settings.xml
+      run: mvn publish bacon-and-java/ --settings bacon-and-java/settings.xml
     - name: Authentimagication clean-up
       run: rm -f bacon-and-java/settings.xml
