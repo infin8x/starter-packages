@@ -32,6 +32,6 @@ jobs:
     - name: Publish the package
       run: |
            cd bacon-and-java/
-           mvn publish --settings settings.xml
+           mvn deploy --settings settings.xml
     - name: Authentimagication clean-up
       run: rm -f bacon-and-java/settings.xml
