@@ -6,6 +6,7 @@ on:
     - master
     paths:
     - 'bacon-and-java/*'
+    - '.github/workflows/bacon-and-java.yml'
 
 jobs:
   build:
