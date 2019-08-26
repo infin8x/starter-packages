@@ -28,10 +28,10 @@ jobs:
     - name: Create the package
       run: |
            cd bacon-and-java/
-           mvn package --settings bacon-and-java/settings.xml
+           mvn package --settings settings.xml
     - name: Publish the package
       run: |
            cd bacon-and-java/
-           mvn publish --settings bacon-and-java/settings.xml
+           mvn publish --settings settings.xml
     - name: Authentimagication clean-up
       run: rm -f bacon-and-java/settings.xml
