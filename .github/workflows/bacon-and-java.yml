@@ -4,6 +4,8 @@ on:
   push: 
     branches:
     - master
+    paths:
+    - 'bacon-and-java/*'
 
 jobs:
   build:
@@ -23,8 +25,12 @@ jobs:
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Create the package
-      run: mvn package bacon-and-java/ --settings bacon-and-java/settings.xml
+      run: |
+           cd bacon-and-java/
+           mvn package --settings bacon-and-java/settings.xml
     - name: Publish the package
-      run: mvn publish bacon-and-java/ --settings bacon-and-java/settings.xml
+      run: |
+           cd bacon-and-java/
+           mvn publish --settings bacon-and-java/settings.xml
     - name: Authentimagication clean-up
       run: rm -f bacon-and-java/settings.xml
