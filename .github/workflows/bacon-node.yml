@@ -1,0 +1,29 @@
+name: Publish bacon-node Maven package
+
+on:
+  push: 
+    branches:
+    - master
+    paths:
+    - 'bacon-node/*'
+    - '.github/workflows/bacon-node.yml'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '8.x'
+    - name: Authentimagication
+      run: sed '1 a //npm.pkg.github.com/:_authToken='$GITHUB_TOKEN .npmrc
+      env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - name: Publish the package
+      run: npm publish
+    - name: Authentimagication clean-up
+      run: rm -f bacon-node/.npmrc
