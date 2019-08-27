@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: '8.x'
     - name: Authentimagication
-      run: //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN > npm-bacon/.npmrc
+      run: echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> npm-bacon/.npmrc
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Publish the package

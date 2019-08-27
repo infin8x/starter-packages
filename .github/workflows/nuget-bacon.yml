@@ -5,7 +5,8 @@ on:
     branches:
     - master
     paths:
-    nuget-bacon/*
+    - 'nuget-bacon/*'
+    - '.github/workflows/nuget-bacon.yml'
 
 jobs:
   build:
