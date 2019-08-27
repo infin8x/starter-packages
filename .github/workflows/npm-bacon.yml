@@ -1,12 +1,12 @@
-name: Publish bacon-node Maven package
+name: Publish npm-bacon npm package
 
 on:
   push: 
     branches:
     - master
     paths:
-    - 'bacon-node/*'
-    - '.github/workflows/bacon-node.yml'
+    - 'npm-bacon/*'
+    - '.github/workflows/npm-bacon.yml'
 
 jobs:
   build:
@@ -20,10 +20,10 @@ jobs:
       with:
         node-version: '8.x'
     - name: Authentimagication
-      run: sed '1 a //npm.pkg.github.com/:_authToken='$GITHUB_TOKEN .npmrc
+      run: //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN > npm-bacon/.npmrc
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Publish the package
       run: npm publish
     - name: Authentimagication clean-up
-      run: rm -f bacon-node/.npmrc
+      run: rm -f npm-bacon/.npmrc
