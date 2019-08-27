@@ -24,6 +24,6 @@ jobs:
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Publish the package
-      run: npm publish
+      run: npm publish npm-bacon/
     - name: Authentimagication clean-up
       run: rm -f npm-bacon/.npmrc
