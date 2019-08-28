@@ -19,10 +19,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: '9.0.4'
-    - name: Authentimagication
-      run: |
-           sed -i -e 's/TOKEN/'$GITHUB_TOKEN'/g' bacon-and-java/settings.xml
-           cat bacon-and-java/settings.xml
+    - name: Add GPR token to template settings.xml
+      run: sed -i -e 's/TOKEN/'$GITHUB_TOKEN'/g' bacon-and-java/settings.xml
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Create the package
@@ -33,5 +31,3 @@ jobs:
       run: |
            cd bacon-and-java/
            mvn deploy --settings settings.xml
-    - name: Authentimagication clean-up
-      run: rm -f bacon-and-java/settings.xml

@@ -1,12 +1,12 @@
-name: Publish bacon NuGet package
+name: Publish ruby-bacon gem
 
 on:
   push:
     branches:
     - master
     paths:
-    - 'nuget-bacon/*'
-    - '.github/workflows/nuget-bacon.yml'
+    - 'ruby-bacon/*'
+    - '.github/workflows/ruby-bacon.yml'
 
 jobs:
   build:
@@ -16,9 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-ruby@v1
       with:
-        dotnet-version: 2.2.401
+        ruby-version: 2.x
     - name: Add GPR token to template nuget.config
       run: |
            sed -i -e 's/TOKEN/'$GITHUB_TOKEN'/g' nuget-bacon/nuget.template.config

@@ -19,15 +19,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '8.x'
-    - name: Authentimagication
-      run: | 
-           echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> npm-bacon/.npmrc
-           cat npm-bacon/.npmrc
+    - name: Add GPR token to .npmrc
+      run: echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> npm-bacon/.npmrc
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Publish the package
       run: |
            cd npm-bacon/
            npm publish
-    - name: Authentimagication clean-up
-      run: rm -f npm-bacon/.npmrc
