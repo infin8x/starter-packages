@@ -14,7 +14,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest] # , windows-latest
+        os: [windows-latest] # , ubuntu-latest
     
     steps:
     - uses: actions/checkout@v1
@@ -24,9 +24,7 @@ jobs:
         dotnet-version: 2.2.401
         source-url: https://nuget.pkg.github.com
     - name: Create the package
-      run: | 
-           cat /home/runner/work/nuget.config
-           dotnet pack nuget-bacon/ --configuration Release
+      run: dotnet pack nuget-bacon/ --configuration Release
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
