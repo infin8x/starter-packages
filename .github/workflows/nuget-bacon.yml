@@ -22,6 +22,8 @@ jobs:
         source-url: https://nuget.pkg.github.com  
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - name: Verify
+      run: cat /home/runner/work/nuget.config
     - name: Create the package
       run: dotnet pack nuget-bacon/ --configuration Release
     - name: Publish the package
