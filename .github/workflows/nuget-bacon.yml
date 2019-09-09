@@ -21,7 +21,7 @@ jobs:
         dotnet-version: 2.2.401
         source-url: https://nuget.pkg.github.com
       env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}  
     - name: Create the package
       run: dotnet pack nuget-bacon/ --configuration Release
     - name: Publish the package
