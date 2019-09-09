@@ -10,8 +10,8 @@ on:
 
 jobs:
   build:
-
-    runs-on: windows-latest
+    matrix:
+        os: [ubuntu-latest, windows-latest]
     
     steps:
     - uses: actions/checkout@v1
@@ -24,6 +24,7 @@ jobs:
       run: dotnet pack nuget-bacon/ --configuration Release
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     - name: Publish the package
       run: dotnet nuget push nuget-bacon/bin/Release/*.nupkg -s GPR
       env:
