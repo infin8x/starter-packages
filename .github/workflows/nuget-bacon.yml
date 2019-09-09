@@ -24,14 +24,14 @@ jobs:
         dotnet-version: 2.2.401
         source-url: https://nuget.pkg.github.com
     - name: Create the package
-      run: dotnet pack nuget-bacon/ --configuration Release
+      run: dotnet pack nuget-bacon\ --configuration Release
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     - name: Publish the package
       run: |
-           dir nuget-bacon/bin/Release
-           dotnet nuget push nuget-bacon/bin/Release/*.nupkg
+           dir nuget-bacon\bin\Release
+           dotnet nuget push nuget-bacon\bin\Release\*.nupkg
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
