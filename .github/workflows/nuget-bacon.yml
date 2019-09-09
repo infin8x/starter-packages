@@ -15,10 +15,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: See directories
-      run: |
-           cd ../
-           ls -lR
     - name: Setup .NET Core
       uses: infin8x/setup-dotnet@master 
       with:
@@ -26,10 +22,6 @@ jobs:
         source-url: https://nuget.pkg.github.com  
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    - name: Check config
-      run: |
-           cd ../
-           ls -lR
     - name: Create the package
       run: dotnet pack nuget-bacon/ --configuration Release
     - name: Publish the package
