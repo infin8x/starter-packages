@@ -23,7 +23,7 @@ jobs:
       uses: infin8x/setup-dotnet@master 
       with:
         dotnet-version: 2.2.401
-        source-url: https://nuget.pkg.github.com
+        source-url: https://nuget.pkg.github.com  
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Check config
