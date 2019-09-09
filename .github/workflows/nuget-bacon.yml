@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Setup .NET Core
-      uses: infin8x/setup-dotnet@master
+      uses: infin8x/setup-dotnet@infin8x/auth
       with:
         dotnet-version: 2.2.401
         source-url: https://nuget.pkg.github.com
