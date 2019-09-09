@@ -18,7 +18,7 @@ jobs:
     - name: See directories
       run: |
            cd ../
-           find .
+           ls -lR
     - name: Setup .NET Core
       uses: infin8x/setup-dotnet@master 
       with:
@@ -29,8 +29,7 @@ jobs:
     - name: Check config
       run: |
            cd ../
-           find .
-           cat nuget.config            
+           ls -lR
     - name: Create the package
       run: dotnet pack nuget-bacon/ --configuration Release
     - name: Publish the package
