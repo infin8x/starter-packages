@@ -19,12 +19,14 @@ jobs:
       uses: infin8x/setup-dotnet@master 
       with:
         dotnet-version: 2.2.401
-        source-url: https://nuget.pkg.github.com  
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        source-url: https://nuget.pkg.github.com
     - name: Verify
       run: cat /home/runner/work/nuget.config
     - name: Create the package
       run: dotnet pack nuget-bacon/ --configuration Release
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Publish the package
       run: dotnet nuget push nuget-bacon/bin/Release/*.nupkg -s GPR
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
