@@ -20,8 +20,6 @@ jobs:
       with:
         dotnet-version: 2.2.401
         source-url: https://nuget.pkg.github.com
-    - name: Verify
-      run: cat /home/runner/work/nuget.config
     - name: Create the package
       run: dotnet pack nuget-bacon/ --configuration Release
       env:
