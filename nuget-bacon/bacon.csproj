@@ -3,12 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Bacon</PackageId>
-    <Version>1.1.3-beta1+002</Version>
+    <Version>1.1.4</Version>
     <Authors>amullans</Authors>
     <Company>Microsoft</Company>
     <PackageDescription>The original dotnet-flavored Bacon</PackageDescription>
     <RepositoryUrl>https://github.com/infin8x/starter-packages</RepositoryUrl>
-    <PackageReleaseNotes>Bacon, fresh out of the bacon-toaster</PackageReleaseNotes>
+    <PackageReleaseNotes>Bacon, now with CI</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
