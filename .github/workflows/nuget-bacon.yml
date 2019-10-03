@@ -26,7 +26,7 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Create the package
-      run: dotnet pack nuget-bacon\ --configuration Release
+      run: dotnet pack --configuration Release nuget-bacon\
       env:
         DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     - name: Publish the package
