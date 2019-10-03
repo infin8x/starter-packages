@@ -30,6 +30,6 @@ jobs:
       env:
         DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     - name: Publish the package
-      run: dotnet nuget push nuget-bacon\bin\Release\*.nupkg
+      run: dotnet nuget push nuget-bacon/bin/Release/*.nupkg
       env:
         DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
