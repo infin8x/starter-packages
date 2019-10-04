@@ -14,14 +14,14 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest]
+        os: [ubuntu-latest] # windows-latest, 
     
     steps:
     - uses: actions/checkout@v1
     - name: Setup .NET Core
       uses: infin8x/setup-dotnet@master 
       with:
-        dotnet-version: 2.2.401
+        dotnet-version: 3.0.100
         source-url: https://nuget.pkg.github.com
         # config-file: nuget-bacon\nuget.config
       env:
