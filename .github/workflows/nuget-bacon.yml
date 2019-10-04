@@ -28,6 +28,10 @@ jobs:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Testing
       run: cat /home/runner/work/nuget.config
+    - name: Restore packages
+      run: dotnet restore nuget-bacon\
+      env:
+        DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     - name: Create the package
       run: dotnet pack --configuration Release nuget-bacon\
       env:
