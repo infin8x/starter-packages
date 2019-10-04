@@ -29,7 +29,7 @@ jobs:
     - name: Testing
       run: cat /home/runner/work/nuget.config
     - name: Restore packages
-      run: dotnet restore nuget-bacon\
+      run: dotnet restore -v d nuget-bacon\
       env:
         DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     - name: Create the package
