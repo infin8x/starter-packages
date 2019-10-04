@@ -26,6 +26,8 @@ jobs:
         # config-file: nuget-bacon\nuget.config
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - name: Testing
+      run: cat /home/runner/work/nuget.config
     - name: Create the package
       run: dotnet pack --configuration Release nuget-bacon\
       env:
