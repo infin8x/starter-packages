@@ -23,7 +23,7 @@ jobs:
       with:
         dotnet-version: 3.0.100
         source-url: https://nuget.pkg.github.com
-        config-file: nuget-bacon\nuget.config
+        config-file: nuget-bacon\nuget.config 
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Create the package
