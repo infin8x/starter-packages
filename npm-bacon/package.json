@@ -1,10 +1,13 @@
 {
-  "name": "@infin8x/npm-bacon",
-  "version": "1.0.2",
+  "name": "@reybard/npm-bacon",
+  "version": "1.0.3",
   "description": "The most tasty package ever, now for npm.",
   "repository": {
     "type": "git",
     "url": "git://github.com/infin8x/starter-packages.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   },
   "main": "index.js",
   "scripts": {
