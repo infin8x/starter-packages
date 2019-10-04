@@ -21,9 +21,9 @@ jobs:
     - name: Setup .NET Core
       uses: infin8x/setup-dotnet@master 
       with:
-        dotnet-version: 3.0.100
+        dotnet-version: 2.2.401
         source-url: https://nuget.pkg.github.com
-        config-file: nuget-bacon\nuget.config 
+        # config-file: nuget-bacon\nuget.config 
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Create the package
